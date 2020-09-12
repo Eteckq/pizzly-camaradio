@@ -1,0 +1,21 @@
+{
+  "name": "Snov.io",
+  "image": "https://logo.clearbit.com/snov.io",
+  "auth": {
+    "authType": "OAUTH2",
+    "bodyFormat": "form",
+    "tokenParams": { "grant_type": "client_credentials" },
+    "tokenURL": "https://app.snov.io/oauth/access_token",
+    "authorizationMethod": "body",
+    "authorizationParams": {}
+  },
+  "request": {
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "Pizzly",
+      "Authorization": "Bearer ${auth.accessToken}"
+    },
+    "baseURL": "https://app.snov.io/restapi/",
+    "params": {}
+  }
+}
